@@ -1369,6 +1369,11 @@ a.header-banner-link {
   display: block;
 }
 
+.wrapper {
+  padding: 0 14px;
+  padding: 0 1rem;
+}
+
 /* =Media queries
 -------------------------------------------------------------- */
 
@@ -1388,11 +1393,20 @@ a.header-banner-link {
     right: 1rem;
   }
 
+  ul.footer-menu {
+    margin-left: 14px;
+    margin-left: 1rem;
+  }
+
   ul.footer-menu li {
     display: inline-block;
     padding: 0 6px;
     padding: 0 0.428571429rem;
     border-right: 1px solid white;
+  }
+
+  ul.footer-menu li:first-child {
+    padding-left: 0;
   }
 
   ul.footer-menu li:last-child {
