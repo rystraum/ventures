@@ -1366,6 +1366,7 @@ a.header-banner-link {
 .copyrights {
   color: #ffffff;
   text-align: center;
+  display: block;
 }
 
 /* =Media queries
@@ -1456,8 +1457,10 @@ a.header-banner-link {
   }
   .main-navigation ul.nav-menu,
   .main-navigation div.nav-menu > ul {
-    background-color: #333333;
+    background: #707070 url('images/header_bg.jpg') repeat-y top left;
     display: inline-block !important;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
     text-align: right;
     width: 100%;
     position: relative;
