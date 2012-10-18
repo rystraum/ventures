@@ -4,6 +4,9 @@
     <div class="site-info">
       <?php do_action( 'twentytwelve_credits' ); ?>
     </div><!-- .site-info -->
+    <div class="copyrights">
+      Copyright &copy; <?php echo date('Y') ?> ICCP Venture Partners
+    </div>
   </footer><!-- #colophon -->
 </div><!-- #page -->
 
