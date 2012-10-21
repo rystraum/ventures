@@ -1592,12 +1592,14 @@ a.header-banner-link {
     max-width: 68.571428571rem;
     overflow: hidden;
   }
+  
   .site-content {
     float: right;
     width: 60%;
-    padding-right: 21px;
-    padding-right: 1.5rem;
+    padding: 0 21px;
+    padding: 0 1.5rem;
   }
+
   body.template-front-page .site-content,
   body.single-attachment .site-content,
   body.full-width .site-content {
