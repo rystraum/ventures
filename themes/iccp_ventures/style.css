@@ -1419,11 +1419,107 @@ a.header-banner-link {
   font-weight: bold;
 }
 
+#page_banner {
+  max-width: 100%;
+}
+
+#testimonials li {
+  display: none;
+  padding: 14px 28px;
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  border: 0.071428571rem solid white;
+  background-color: #777777;
+  word-wrap: break-word;
+  color: white;
+}
+
+#testimonials .source {
+  display: block;
+  text-align: right;
+}
+
+#testimonials li:before, #testimonials li:after {
+  color: #69c;
+  display: block;
+  font-size: 300%;
+  font-family: serif;
+}
+
+#testimonials li:before {
+  content: '\201C';
+  height: 14px;
+  height: 1rem;
+  margin-left: -21px;
+  margin-left: -1.5rem;
+}
+
 /* =Media queries
 -------------------------------------------------------------- */
 
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
+  #banner {
+    position: relative;
+    height: 200px;
+    height: 14.285714285714286rem;
+  }
+
+  #page_banner {
+    height: 200px;
+    height: 14.285714285714286rem;
+    float: right;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    border-left: 1px solid white;
+    border-left: 0.071428571rem solid white;
+  }
+
+  #testimonials {
+    float: left;
+    padding-left: 24px;
+    padding-left: 1.714285714rem;
+    background-color: #333333;
+    border-left: 1px solid white;
+    border-left: 0.071428571rem solid white;
+    position: relative;
+    z-index: 2;
+    max-width: 30%;
+    height: 200px;
+    height: 14.285714285714286rem;
+  }
+
+  #testimonials li {
+    border-top-color: #777777;
+    border-bottom-color: #777777;
+    border-right-color: #777777;
+    height: 170px;
+    height: 12.142857142857142rem;
+  }
+
+  #post_banner {
+    height: 20px;
+    height: 1.4285714285714286rem;
+    background-color: #333333;
+    border-left: 1px solid white;
+    border-left: 0.071428571rem solid white;
+    border-top: 1px solid white;
+    border-top: 0.071428571rem solid white;
+  }
+
+  #inner_post {
+    margin-left: 24px;
+    margin-left: 1.714285714rem;
+    background-color: #777777;
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid white;
+    border-left: 0.071428571rem solid white;
+    border-right: 1px solid white;
+    border-right: 0.071428571rem solid white;
+  }
+
   .menu-footer-container {
     display: inline-block;
     text-align: left;
@@ -1466,7 +1562,7 @@ a.header-banner-link {
     text-align: right;
     display: inline-block;
     position: absolute;
-    top: 25%;
+    bottom: 30%;
     right: 24px;
     right: 1.714285714rem;
   }
@@ -1477,6 +1573,7 @@ a.header-banner-link {
     border-radius: 0;
     box-shadow: 0 0 0 rgba(64, 64, 64, 0.1);
   }
+
   .author-avatar {
     float: left;
     margin-top: 8px;
@@ -1504,6 +1601,9 @@ a.header-banner-link {
   .widget-area {
     float: right;
     width: 26.041666667%;
+  }
+  .site-header {
+    padding-bottom: 0;
   }
   .site-header h1,
   .site-header h2 {

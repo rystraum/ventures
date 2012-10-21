@@ -26,6 +26,14 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var lis = $("li", "#testimonials ");
+    var index = Math.floor(Math.random() * lis.length) + 1;
+    $("li:nth-child("+index+")", "#testimonials").show();
+  });
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -51,16 +59,20 @@
 			<div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu') ); ?>
 		</nav><!-- #site-navigation -->
-    
-    <?php $banner_image = get_post_meta($post->ID, 'banner_image', true); ?>
-    <?php if (!empty($banner_image)): ?>
-      <div id="banner">
-        <ul id="testimonials">
-          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('testimonials') ) {} ?>
-        </ul>
-        <img src="<?php echo $banner_image ?>" class="page_banner" width="100%" />
-      </div>
-    <?php endif; ?>
 	</header><!-- #masthead -->
-
+  
+  <?php $banner_image = get_post_meta($post->ID, 'banner_image', true); ?>
+  <?php 
+    if (empty($banner_image)) $banner_image = get_stylesheet_directory_uri() . "/images/Banner_Home.jpg";
+  ?>
+  <div id="banner">
+    <img src="<?php echo $banner_image ?>" id="page_banner" />
+    <ul id="testimonials">
+      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('testimonials') ) {} ?>
+    </ul>
+  </div>
+  <div id="post_banner">
+    <div id="inner_post"></div>
+  </div>
+  <div class="clear"></div>
 	<div id="main" class="wrapper">
