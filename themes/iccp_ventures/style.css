@@ -1704,6 +1704,7 @@ a.header-banner-link {
   .main-navigation ul li:hover > ul {
     border-left: 0;
     display: block;
+    margin-left: -1px;
   }
   .main-navigation li ul li {
     text-align: center;
