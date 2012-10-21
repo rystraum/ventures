@@ -51,6 +51,16 @@
 			<div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu') ); ?>
 		</nav><!-- #site-navigation -->
+    
+    <?php $banner_image = get_post_meta($post->ID, 'banner_image', true); ?>
+    <?php if (!empty($banner_image)): ?>
+      <div id="banner">
+        <ul id="testimonials">
+          <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('testimonials') ) {} ?>
+        </ul>
+        <img src="<?php echo $banner_image ?>" class="page_banner" width="100%" />
+      </div>
+    <?php endif; ?>
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">
