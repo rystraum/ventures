@@ -1461,6 +1461,7 @@ a.header-banner-link {
 @media screen and (min-width: 600px) {
   #banner {
     position: relative;
+    z-index: 0;
     height: 200px;
     height: 14.285714285714286rem;
   }
@@ -1470,7 +1471,7 @@ a.header-banner-link {
     height: 14.285714285714286rem;
     float: right;
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     right: 0;
     border-left: 1px solid white;
     border-left: 0.071428571rem solid white;
@@ -1483,9 +1484,10 @@ a.header-banner-link {
     background-color: #333333;
     border-left: 1px solid white;
     border-left: 0.071428571rem solid white;
-    position: relative;
-    z-index: 2;
-    max-width: 30%;
+    border-right: 1px solid white;
+    border-right: 0.071428571rem solid white;
+    width: 274px;
+    width: 19.571428571rem;
     height: 200px;
     height: 14.285714285714286rem;
   }
@@ -1502,17 +1504,17 @@ a.header-banner-link {
     height: 20px;
     height: 1.4285714285714286rem;
     background-color: #333333;
-    border-left: 1px solid white;
-    border-left: 0.071428571rem solid white;
-    border-top: 1px solid white;
-    border-top: 0.071428571rem solid white;
+    border: solid white;
+    border-width: 1px 0 1px 1px;
+    border-width: 0.071428571rem 0 0.071428571rem 0.071428571rem;
   }
 
   #inner_post {
     margin-left: 24px;
     margin-left: 1.714285714rem;
     background-color: #777777;
-    width: 30%;
+    width: 273px;
+    width: 19.5rem;
     height: 100%;
     border-left: 1px solid white;
     border-left: 0.071428571rem solid white;
@@ -1544,6 +1546,7 @@ a.header-banner-link {
     padding: 0 6px;
     padding: 0 0.428571429rem;
     border-right: 1px solid white;
+    border-right: 0.071428571rem solid white;
   }
 
   ul.footer-menu li:first-child {
@@ -1590,18 +1593,48 @@ a.header-banner-link {
     overflow: hidden;
   }
   .site-content {
-    float: left;
-    width: 65.104166667%;
+    float: right;
+    width: 60%;
+    padding-right: 21px;
+    padding-right: 1.5rem;
   }
   body.template-front-page .site-content,
   body.single-attachment .site-content,
   body.full-width .site-content {
     width: 100%;
   }
-  .widget-area {
-    float: right;
-    width: 26.041666667%;
+  
+  #secondary {
+    color: white;
+    float: left;
+    margin-left: -14px;
+    margin-left: -1rem;
+    margin-top: 0;
+    background-color: #336699;
+    width: 298px;
+    width: 21.285714286rem;
+    height: 100%;
+    border-left: 1px solid white;
+    border-left: 0.071428571rem solid white;
+    border-right: 1px solid white;
+    border-right: 0.071428571rem solid white;
   }
+
+  #secondary a {
+    color: white;
+  }
+
+  #inner_secondary {
+    border-left: 1px solid white;
+    border-left: 0.071428571rem solid white;
+    margin-left: 24px;
+    margin-left: 1.714285714rem;
+    background-color: #333333;
+    padding: 21px;
+    padding: 1.5rem;
+    height: 100%;
+  }
+
   .site-header {
     padding-bottom: 0;
   }

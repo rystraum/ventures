@@ -71,8 +71,8 @@
       <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('testimonials') ) {} ?>
     </ul>
   </div>
-  <div id="post_banner">
+  <div class="clear"></div>
+  <div id="post_banner" class="clear">
     <div id="inner_post"></div>
   </div>
-  <div class="clear"></div>
 	<div id="main" class="wrapper">
