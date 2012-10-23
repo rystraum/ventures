@@ -596,8 +596,6 @@ footer[role="contentinfo"] {
   line-height: 2;
   max-width: 960px;
   max-width: 68.571428571rem;
-  margin-top: 12px;
-  margin-top: 0.857142857rem;
   margin-left: auto;
   margin-right: auto;
   padding: 12px 0;
@@ -1459,6 +1457,9 @@ a.header-banner-link {
 
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
+  #main {
+    background: url('images/body_bg.png') repeat-y top left;
+  }
   #banner {
     position: relative;
     z-index: 0;
@@ -1634,7 +1635,6 @@ a.header-banner-link {
     background-color: #333333;
     padding: 21px;
     padding: 1.5rem;
-    height: 100%;
   }
 
   .site-header {
