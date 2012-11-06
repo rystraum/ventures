@@ -1599,6 +1599,8 @@ a.header-banner-link {
     width: 60%;
     padding: 0 21px;
     padding: 0 1.5rem;
+    margin-right: 42px;
+    margin-right: 3rem;
   }
 
   body.template-front-page .site-content,
