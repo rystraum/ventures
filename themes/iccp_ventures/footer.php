@@ -5,7 +5,7 @@
       <?php do_action( 'twentytwelve_credits' ); ?>
     </div><!-- .site-info -->
     <div class="copyrights">
-      Copyright &copy; <?php echo date('Y') ?> ICCP Venture Partners
+      Copyright &copy; <?php echo date('Y') ?> ICCP Venture Partners, Site by <a href="http://loudcloud.ph" title="LoudCloud Inc.">LoudCloud Inc.</a>
     </div>
   </footer><!-- #colophon -->
 </div><!-- #page -->
